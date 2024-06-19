@@ -10,4 +10,11 @@ public class Remitente extends Persona{
         Remitente rem = (Remitente) obj;
         return this.nombre == rem.nombre;
     }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString();
+    }
+    
 }

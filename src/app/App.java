@@ -8,29 +8,18 @@ public class App {
 
         Remitente rem = new Remitente("Emanuel");
         Destinatario des = new Destinatario("Ayelén");
-        Destinatario des2 = new Destinatario("Enzo");
         Mensaje men = new Mensaje(rem, des, "Me prestas unos pesos?");
-
-        System.out.println(men);
-
-        Remitente rem2 = new Remitente("Emanuel");
-
-        System.out.println(rem.equals(rem2));
 
         Buzon.recibirMensaje(men);
 
-        Buzon.imprimirBuzon();
+        Destinatario des2 = new Destinatario("Enzo");
+        Remitente rem2 = new Remitente("Vicente");
+        Mensaje men2 = new Mensaje(rem2, des2, "¿Hay consulta?");
 
-        Buzon.entregarMensaje(des2);
-
-        Buzon.imprimirBuzon();
-
-        System.out.println(des2);
+        Buzon.recibirMensaje(men2);
 
         Buzon.entregarMensaje(des);
-        Buzon.imprimirBuzon();
-        System.out.println(des);
+        Buzon.entregarMensaje(des2);
 
-        
     }
 }
