@@ -17,6 +17,10 @@ public class Mensaje {
         return this.destinatario;
     }
 
+    public Remitente getRemitente() {
+        return remitente;
+    }
+
     public String toString(){
         String str = "";
             str += "\nMensaje ---------------------\n";
@@ -25,4 +29,5 @@ public class Mensaje {
             str += "Mensaje: "+this.texto+"\n";
         return str;
     }
+
 }
